@@ -30,8 +30,9 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-8 text-sm font-medium text-gray-700">
           <Link to="/">Home</Link>
           <Link to="/contact">Contact</Link>
-          <Link to="/grantee">Grantee</Link>
-          <Link to="/support">Contact Us</Link>
+          <Link to="/grantee">Services</Link>
+          <Link to="/support">Guarantees</Link>
+          <Link to="/support">About Us</Link>
         </div>
 
         {/* Register Button */}
