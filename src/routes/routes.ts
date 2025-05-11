@@ -5,6 +5,7 @@ const routes = {
   dashboard: '/dashboard',
   profile: '/profile',
   notFound: '*',
+  contact: '/contact', 
 };
 
 export default routes;
