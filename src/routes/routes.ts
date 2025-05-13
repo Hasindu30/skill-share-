@@ -6,6 +6,8 @@ const routes = {
   profile: '/profile',
   notFound: '*',
   contact: '/contact', 
+  service: '/service', 
+  garantee:'/garantee'
 };
 
 export default routes;

@@ -1,12 +1,18 @@
 import Navbar from '../../src/components/Navbar';
 import contact from "../../src/assets/contact.jpg"
+import { useEffect, useState } from 'react';
 const Contact = () => {
+  useEffect(() => {
+      setTimeout(() => {
+        AOS.init({ duration: 1100, once: true });
+      }, 100); 
+    }, []);
   return (
     <div>
       <Navbar />
 
       {/* Top Banner */}
-      <div className="relative bg-gray-100 w-full h-[300px] flex items-center justify-center">
+      <div className="relative bg-gray-100 w-full h-[300px] flex items-center justify-center" data-aos="fade-up">
         <img
           src={contact}
           alt="Contact Banner"
@@ -16,7 +22,7 @@ const Contact = () => {
       </div>
 
       {/* Contact Section */}
-      <section className="py-16 px-4 bg-white">
+      <section className="py-16 px-4 bg-white"data-aos="fade-up">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
           
           {/* Left Info */}
