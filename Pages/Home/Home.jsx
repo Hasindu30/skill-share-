@@ -62,17 +62,17 @@ const faqItems = [
       <Navbar />
 
       
-      <section className="flex flex-col items-center justify-center text-center py-24 px-4 bg-gradient-to-b from-purple-200 to-white" data-aos="fade-up">
-        <div className="bg-white text-sm px-4 py-1 rounded-full mb-4 shadow inline-flex items-center gap-2">
+      <section className="flex flex-col items-center justify-center text-center py-24 px-4 bg-gradient-to-b from-purple-200 to-white" >
+        <div className="bg-white text-sm px-4 py-1 rounded-full mb-4 shadow inline-flex items-center gap-2"data-aos="zoom-in">
           <span>📢</span> Your #1 Platform for assigment help.
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-4 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-4 leading-tight"data-aos="zoom-in">
           Give Your Assigment for Us.<br />Just a One Click!
         </h1>
-        <p className="text-gray-600 text-base md:text-lg max-w-xl mb-8">
+        <p className="text-gray-600 text-base md:text-lg max-w-xl mb-8"data-aos="zoom-in">
           Create your assignment, We craft high-quality academic papers with fast turn around times..
         </p>
-        <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-full transition"data-aos="zoom-in">
           BOOK NOW
         </button>
       </section>

@@ -12,7 +12,7 @@ const Contact = () => {
       <Navbar />
 
       {/* Top Banner */}
-      <div className="relative bg-gray-100 w-full h-[300px] flex items-center justify-center" data-aos="fade-up">
+      <div className="relative bg-gray-100 w-full h-[300px] flex items-center justify-center" >
         <img
           src={contact}
           alt="Contact Banner"

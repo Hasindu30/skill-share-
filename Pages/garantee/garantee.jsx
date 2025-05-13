@@ -35,13 +35,13 @@ const GuaranteePage = () => {
   return (
     <div>
       <Navbar />
-      <section className="py-24 px-4 bg-gradient-to-b from-purple-200 to-white text-center"data-aos="fade-up">
-        <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">Our Guarantees</h1>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-12">
+      <section className="py-24 px-4 bg-gradient-to-b from-purple-200 to-white text-center">
+        <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6"data-aos="fade-up">Our Guarantees</h1>
+        <p className="text-gray-600 max-w-2xl mx-auto mb-12"data-aos="fade-up">
           We are committed to delivering top-tier academic support backed by strong values and solid promises.
         </p>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"data-aos="fade-up">
           {guarantees.map((item, idx) => (
             <div
               key={idx}

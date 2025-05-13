@@ -35,6 +35,26 @@ const services = [
     icon: '/icons/plagiarism.png',
   },
 ];
+const plans = [
+  {
+    name: 'Free',
+    price: '$0',
+    features: ['Basic Proofreading', 'Plagiarism Check (Summary)', 'Standard Delivery'],
+    badge: 'Basic Access',
+  },
+  {
+    name: 'Gold',
+    price: '$29',
+    features: ['Essay Writing', 'Plagiarism Report', 'Priority Email Support', 'Unlimited Revisions'],
+    badge: 'Best Value',
+  },
+  {
+    name: 'Platinum',
+    price: '$59',
+    features: ['All Gold Features', 'One-on-One Expert Consultation', 'Express Delivery', 'Live Chat Support'],
+    badge: 'Premium',
+  },
+];
 
 const ServicesPage = () => {
   useEffect(() => {
@@ -47,14 +67,14 @@ const ServicesPage = () => {
       <Navbar />
 
       {/* Top Hero Decoration (Copied from Home Page) */}
-      <section className="flex flex-col items-center justify-center text-center py-24 px-4 bg-gradient-to-b from-purple-200 to-white "data-aos="fade-up">
-        <div className="bg-white text-sm px-4 py-1 rounded-full mb-4 shadow inline-flex items-center gap-2">
+      <section className="flex flex-col items-center justify-center text-center py-24 px-4 bg-gradient-to-b from-purple-200 to-white ">
+        <div className="bg-white text-sm px-4 py-1 rounded-full mb-4 shadow inline-flex items-center gap-2"data-aos="fade-up">
           <span>📚</span> Academic Help Services You Can Trust
         </div>
-        <h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-4 leading-tight">
+        <h1 className="text-4xl md:text-6xl font-bold text-blue-900 mb-4 leading-tight"data-aos="fade-up">
           Explore Our <br /> Academic Assistance Services
         </h1>
-        <p className="text-gray-600 text-base md:text-lg max-w-xl mb-8">
+        <p className="text-gray-600 text-base md:text-lg max-w-xl mb-8"data-aos="fade-up">
           From essays to research support, we've got your academic needs covered with expert precision.
         </p>
       </section>
@@ -72,7 +92,7 @@ const ServicesPage = () => {
             Whether it's essays, research, or final-year projects, we’re here to guide you through.
           </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8"data-aos="fade-up">
             {services.map((service, index) => (
               <div
                 key={index}
@@ -83,6 +103,40 @@ const ServicesPage = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-gray-800 mb-2 text-center">{service.title}</h3>
                 <p className="text-gray-600 text-sm text-center">{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-24 px-4 bg-gray-50" data-aos="fade-up">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Choose Your Plan</h2>
+          <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+            Flexible pricing to meet every student's academic journey.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            {plans.map((plan, index) => (
+              <div
+                key={index}
+                className="bg-white border border-gray-200 rounded-2xl p-6 shadow-md hover:shadow-xl transition"
+              >
+                <div className="text-sm uppercase tracking-widest font-semibold text-blue-600 mb-2">
+                  {plan.badge}
+                </div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">{plan.name}</h3>
+                {/* <p className="text-3xl font-bold text-blue-700 mb-6">{plan.price}</p> */}
+                <ul className="text-sm text-gray-700 mb-6 space-y-2 text-left">
+                  {plan.features.map((feature, idx) => (
+                    <li key={idx} className="flex items-start gap-2">
+                      <span>✅</span> {feature}
+                    </li>
+                  ))}
+                </ul>
+                <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium transition">
+                  Select Plan
+                </button>
               </div>
             ))}
           </div>
